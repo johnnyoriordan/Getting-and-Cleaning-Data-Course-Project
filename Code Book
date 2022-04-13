@@ -1,0 +1,46 @@
+Modifications:
+
+1. Assigning each data file to a variable name:
+    features <- features.txt
+    subject_test <- test/subject_test.txt
+    x_test <- test/X_test.txt
+    y_test <- test/y_test.txt
+    subject_train <- test/subject_train.txt
+    x_train <- test/X_train.txt
+    y_train <- test/y_train.txt
+
+2. Merging the training data sets and the test data sets to create one data frame called Merged_Data:
+    X wasis created by merging x_train and x_test
+    Y was is created by merging y_train and y_test
+    Subject was created by merging subject_train and subject_test
+    Merged_Data was created by merging Subject, Y and X
+
+
+3. Extracting only the mean and standard deviation for each measurement:
+    Mean_Std_Data was created by subsetting Merged_Data,
+    selecting only the columns: subject and code,
+    and the mean and standard deviation for each measurement.
+
+
+4. Using descriptive activity names to name the activities in the data set:
+    Numbers in code column of Mean_Std_Data were replaced with corresponding activity names taken from the second column of the activities variable.
+
+
+5. Appropriately labeling the data set with descriptive variable names:
+    code column in Mean_Std_Data renamed to activities
+    All Acc in column’s name replaced by Accelerometer
+    All Gyro in column’s name replaced by Gyroscope
+    All BodyBody in column’s name replaced by Body
+    All Mag in column’s name replaced by Magnitude
+    All start with character f in column’s name replaced by Frequency
+    All start with character t in column’s name replaced by Time
+
+
+6. Creating a second, independent tidy data set with the average of each variable for each activity and each subject:
+Tidy_Data was created by sumarizing Mean_Std_Data,
+taking the means of each variable for each activity and each subject, 
+after being grouped by subject and activity.
+Tidy_Data was then exported as a txt. file.
+
+
+
