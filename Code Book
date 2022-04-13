@@ -37,10 +37,10 @@ Modifications:
 
 
 6. Creating a second, independent tidy data set with the average of each variable for each activity and each subject:
-Tidy_Data was created by sumarizing Mean_Std_Data,
-taking the means of each variable for each activity and each subject, 
-after being grouped by subject and activity.
-Tidy_Data was then exported as a txt. file.
+        Tidy_Data was created by sumarizing Mean_Std_Data,
+        taking the means of each variable for each activity and each subject, 
+        after being grouped by subject and activity.
+        Tidy_Data was then exported as a txt. file.
 
 
 
